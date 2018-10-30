@@ -1,0 +1,20 @@
+
+public class ventas extends clientes
+
+{
+    String numeroventa;
+
+    public ventas(String numeroventa, String nombre, String apellido, String telefono, String clientefrecuente) {
+        super(nombre, apellido, telefono, clientefrecuente);
+        this.numeroventa = numeroventa;
+    }
+      
+    public void contador ()
+      {
+          System.out.println("\n se ha realizado una venta al usuario...." + getNombre()+ "\ncuyos productos fueron" );
+}
+    
+  
+   
+  
+}
