@@ -1,0 +1,17 @@
+package proyecto;
+
+
+public class operacion
+{
+  int a = 23000;
+
+  
+ 
+
+
+public void operacion()
+{
+    System.out.println("el total es \n " + a +"\nMUCHAS GRACIAS POR SU COMPRA");
+}
+
+}
