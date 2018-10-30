@@ -1,0 +1,21 @@
+package proyecto;
+
+
+public class estante2 extends inventario 
+{
+    
+    public estante2(String numeroserie, String producto, String precio, String cantidad, String recomendacion) 
+    {
+        super(numeroserie, producto, precio, cantidad, recomendacion);
+    }
+ @Override
+    public void ImprimeInformacion() 
+    {
+      
+    }
+    public void estante2()
+     {
+         System.out.println("producto del estante 2\n" + getProducto() + "\npor el valor de\n " + getPrecio());
+     }
+     
+}
