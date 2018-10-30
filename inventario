@@ -1,0 +1,48 @@
+package proyecto;
+
+
+public abstract class inventario 
+{
+   String numeroserie;
+    String producto;
+    String  precio ;
+    String cantidad;
+    String recomendacion;
+
+    public String getNumeroserie() {
+        return numeroserie;
+    }
+
+    public String getProducto() {
+        return producto;
+    }
+
+    public String getPrecio() {
+        return precio;
+    }
+
+    public String getCantidad() {
+        return cantidad;
+    }
+
+    public String getRecomendacion() {
+        return recomendacion;
+    }
+
+    public inventario(String numeroserie, String producto, String precio, String cantidad, String recomendacion) {
+        this.numeroserie = numeroserie;
+        this.producto = producto;
+        this.precio = precio;
+        this.cantidad = cantidad;
+        this.recomendacion = recomendacion;
+    }
+
+     public void imprimeDatos1()
+           {
+               System.out.println("\nnumero de serie.."+ numeroserie );
+               System.out.println("nombre producto.."+ producto );
+               System.out.println("precio  es.."+ precio );
+               System.out.println("recomendacion" + recomendacion);
+           }     
+     public abstract  void ImprimeInformacion ();
+}
