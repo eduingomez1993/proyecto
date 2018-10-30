@@ -1,0 +1,53 @@
+package proyecto;
+
+
+
+
+public class clientes 
+{
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public String getClientefrecuente() {
+        return clientefrecuente;
+    }
+      String nombre;
+      String apellido;
+      String telefono;
+      String  clientefrecuente;
+      
+    public clientes(String nombre, String apellido, String telefono, String clientefrecuente) 
+    {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
+        this.clientefrecuente = clientefrecuente;
+    }
+
+    
+   
+  
+            
+    public void imprimeDatos()
+    
+           {
+               System.out.println("\nnombre del cliente .."+ nombre );
+               System.out.println("apellido.."+ apellido );
+               System.out.println("telefono.."+ telefono );
+               System.out.println("es cliente freciente? " + clientefrecuente);
+           }     
+    }
+
+
+    
+
