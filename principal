@@ -1,27 +1,61 @@
 
 
+package proyecto;
+
+import javax.swing.JOptionPane;
+
+
+
+public class Proyecto 
+{
+
  
-    public static void main(String[] args)
+    public static void main(String[] args) 
     {
-       clientes  p=  new clientes (" alberto",  "real", "21234567","si");
+        String user="jair", use;
+        int pass=123;
+        int pas;
+        int op=0;
+       
+       use=JOptionPane.showInputDialog(null,"Ingrese codigo empleado Por Favor\n");
+       if(use.equals(user))
+       {
+           pas=Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese su contraseña por favor\n"));
+           if(pass==pas)
+           {
+           
+           clientes  p=  new clientes (" \nAlberto",  "\nReal", "\n3124567890","\nSi");
        p.imprimeDatos();
-       System.out.println("\n ESTANTE NUMERO UNO");
-     estante1 a=  new estante1 (" 001",  "huesos de perro", "21000","5 unidades","dar en las mañanas");
-       a.imprimeDatos1();
+    
+     estante1 a=  new estante1 (" 001",  "Huesos de perro", "21000","5 Unidades","Dar en las mañanas unicamente para evitar malestar estomacal");
+
+     a.imprimeDatos1();
        a.ImprimeInformacion();
-        System.out.println("\n ESTANTE NUMERO DOS");
-       estante2  b=  new estante2(" 002",  "comida cachorro", "2000"," 1 libra","dar remojada");
+       
+       estante2  b=  new estante2(" 002",  "Comida cachorro", "2000"," 1 Libra","Dar remojada para mejorar su calidad");
        b.imprimeDatos1();
         b.ImprimeInformacion();
         
-        ventas  c=  new ventas (" 001",  "alberto", "21234567","si","001");
+        ventas  c=  new ventas (" 001",  "\nAlberto", "\n3124567890","si","001");
        c.contador ();
-       a.estante();
-       b.estante2();
+      
        operacion d= new operacion ();
        d.operacion();
+            }
+    
+       else{
+       JOptionPane.showMessageDialog(null, "Acceso denegado:\n"
+                    + "Por favor ingrese un usuario y/o contraseña correctos", "Acceso denegado",
+                    JOptionPane.ERROR_MESSAGE);}
+   
+        }
+        else{
+       JOptionPane.showMessageDialog(null, "Acceso denegado:\n"
+                    + "Por favor ingrese un usuario y/o contraseña correctos", "Acceso denegado",
+                    JOptionPane.ERROR_MESSAGE);}
        
        
+   
     }
     
 }
